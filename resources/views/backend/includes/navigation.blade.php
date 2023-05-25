@@ -82,6 +82,23 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-home-circle'></i>
 						</div>
+						<div class="menu-title">CategoryP</div>
+					</a>
+					<ul>
+						
+						<li> <a href="{{ route('addcategoryp') }}"><i class="bx bx-right-arrow-alt"></i>AddCategoryP</a>
+						</li>
+						<li> <a href="{{ route('showcategoryp') }}"><i class="bx bx-right-arrow-alt"></i>ManageCategoryp</a>
+						</li>
+						<li> <a href=""><i class="bx bx-right-arrow-alt"></i>EditCategoryp</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
 						<div class="menu-title">BrandTwo</div>
 					</a>
 					<ul>

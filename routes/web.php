@@ -11,6 +11,7 @@ use App\Http\Controllers\Backend\PracticeController;
 use App\Http\Controllers\Backend\RakibController;
 use App\Http\Controllers\Backend\BrandTwoController;
 use App\Http\Controllers\Backend\ApiController;
+use App\Http\Controllers\Backend\CategoryPController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,6 +64,16 @@ Route::get('/inactivecategory/{id}',[CategoryController::class,'inactive']);
 Route::get('/editcategory/{id}',[CategoryController::class,'edit']);
 Route::post('/insertcategory',[CategoryController::class,'store'])->name('insertcategory');
 Route::post('/updatecategory/{id}',[CategoryController::class,'update']);
+
+//categoryP
+Route::get('/addcategoryp',[CategoryPController::class,'index'])->name("addcategoryp");
+Route::post('/insertcategoryp',[CategoryPController::class,'insert'])->name('insertcategoryp');
+Route::get('/showcategoryp',[CategoryPController::class,'show'])->name('showcategoryp');
+Route::get('/activecategoryp/{id}',[CategoryPController::class,'active'])->name("activecategoryp");
+Route::get('/inactivecategoryp/{id}',[CategoryPController::class,'inactive'])->name("inactivecategoryp");
+Route::get('/deletecategoryp/{id}',[CategoryPController::class,'delete'])->name("deletecategoryp");
+Route::get('/editcategoryp/{id}',[CategoryPController::class,'edit'])->name("editcategoryp");
+Route::post('/updatecategoryp/{id}',[CategoryPController::class,'update'])->name("updatecategoryp");
 
 //subcategory
 Route::get('/addsubcategory',[SubCategoryController::class,'index'])->name("addsubcategory");
