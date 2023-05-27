@@ -82,6 +82,20 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-home-circle'></i>
 						</div>
+						<div class="menu-title">CategoryA</div>
+					</a>
+					<ul>
+						
+						<li> <a href="{{ route('addcategorya') }}"><i class="bx bx-right-arrow-alt"></i>Add CategoryA</a>
+						</li>
+						
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
 						<div class="menu-title">CategoryP</div>
 					</a>
 					<ul>

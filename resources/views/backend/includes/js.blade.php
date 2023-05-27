@@ -23,6 +23,7 @@
 	<script src="{{ asset('backend') }}/assets/js/ajaxforsubcategory.js"></script>
 	<script src="{{ asset('backend') }}/assets/js/ajaxforpractice.js"></script>
 	<script src="{{ asset('backend') }}/assets/js/ajaxforrakib.js"></script>
+	<script src="{{ asset('backend') }}/assets/js/ajaxforcategorya.js"></script>
 	<script>
 		//show data from fake api
                     jQuery(document).ready(function(){
