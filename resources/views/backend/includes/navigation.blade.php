@@ -47,6 +47,36 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-home-circle'></i>
 						</div>
+						<div class="menu-title"><b>office</b></div>
+					</a>
+					<ul>
+						
+						<li> <a href="{{ route('addoffice') }}"><i class="bx bx-right-arrow-alt"></i>Add </a>
+						</li>
+						<li> <a href="{{ route('showoffice') }}"><i class="bx bx-right-arrow-alt"></i>Manage </a>
+						</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title"><b>office Ajax</b></div>
+					</a>
+					<ul>
+						
+						<li> <a href="{{ route('addofficeajax') }}"><i class="bx bx-right-arrow-alt"></i>Add </a>
+						</li>
+						<li> <a href=""><i class="bx bx-right-arrow-alt"></i>Manage </a>
+						</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
 						<div class="menu-title">Brand</div>
 					</a>
 					<ul>
@@ -78,6 +108,8 @@
 						
 					</ul>
 				</li>
+				
+
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='bx bx-home-circle'></i>

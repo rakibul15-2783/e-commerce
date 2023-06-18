@@ -48,7 +48,7 @@
 											<input type="text" name="name" value="{{ old('name') }}" class="form-control" id="inputEnterYourName" placeholder="Enter BrandTwo Name">
 										    @error('name')
                                                <span class="text-danger">{{ $message }}</span>
-                                            @enderror
+                                            @enderror 
                                         </div>
 									</div>
 									<div class="row mb-3">

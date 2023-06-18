@@ -13,6 +13,8 @@ use App\Http\Controllers\Backend\BrandTwoController;
 use App\Http\Controllers\Backend\ApiController;
 use App\Http\Controllers\Backend\CategoryPController;
 use App\Http\Controllers\Backend\CategoryAController;
+use App\Http\Controllers\Backend\OfficeController;
+use App\Http\Controllers\Backend\OfficeAjaxController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +35,20 @@ Route::get('/', function () {
 Route::get('/gotogoogle',[SocialLoginController::class,"gotogoogle"])->name('gotogoogle');
 //social data store
 Route::get('/apigstore',[SocialLoginController::class,"apigstore"]);
+
+//office
+Route::get('/addoffice',[OfficeController::class, 'index'])->name('addoffice');
+Route::post('/insertoffice',[OfficeController::class, 'store'])->name('insertoffice');
+Route::get('/showoffice',[OfficeController::class, 'show'])->name('showoffice');
+Route::get('/activeoffice/{id}',[OfficeController::class, 'active'])->name('activeoffice');
+Route::get('/inactiveoffice/{id}',[OfficeController::class, 'inactive'])->name('inactiveoffice');
+Route::get('/deleteoffice/{id}',[OfficeController::class, 'destroy'])->name('deleteoffice');
+Route::get('/editoffice/{id}',[OfficeController::class, 'edit'])->name('editoffice');
+Route::post('/updateoffice/{id}',[OfficeController::class, 'update'])->name('updateoffice');
+
+//officeajax
+Route::get('/addofficeajax',[OfficeAjaxController::class, 'index'])->name("addofficeajax");
+Route::post('insertofficeajax',[OfficeAjaxController::class, 'store']);
 
 //product
 Route::get('/addproduct',[ProductController::class,'index'])->name("addproduct");

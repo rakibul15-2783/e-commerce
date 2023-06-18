@@ -12,14 +12,14 @@
 						</nav>
 					</div>
 					
-				</div> 
+				</div>
                 <div class="card">
 					<div class="card-body">
 						<div class="table-responsive">
 							<table id="example" class="table table-striped table-bordered" style="width:100%">
 								<thead>
 									<tr>
-										<th>Brand Name</th>
+										<th>Product Name</th>
 										<th>Description</th>
 										<th>Price</th>
 										<th>Quantity</th>
@@ -27,32 +27,36 @@
                                         <th>Action</th>
 									</tr>
 								</thead>
-                                @foreach($brands as $brand)
+                                @foreach($office as $office)
 								<tbody>
+                                    
 									<tr>
-										<td>{{ $brand->name }}</td>
-										<td>{{ $brand->des }}</td>
-										<td>{{ $brand->price }}</td>
-										<td>{{ $brand->quantity }}</td>
-										<td>
-                                            @if($brand->status==1)
-                                              <a href="{{ route('active',$brand->id) }}" class="btn btn-info">Active</a>
-                                            @else
-                                              <a href="{{ route('inactive',$brand->id) }}" class="btn btn-success">Inactive</a>
-
-                                            @endif
+                                        <td>{{ $office->name }}</td>
+                                        <td>{{ $office->des }}</td>
+                                        <td>{{ $office->price }}</td>
+                                        <td>{{ $office->qnt }}</td>
+                                        <td>
+                                         @if($office->status == "1")
+                                         <a href="{{ route('activeoffice',$office->id) }}" value="{{ $office->id }}" class="btn btn-info btn-sm">Active</a>
+                                         @else
+                                         <a href="{{ route('inactiveoffice',$office->id) }}" value="{{ $office->id }}" class="btn btn-warning btn-sm">Inactive</a>
+                                         @endif
                                         </td>
                                         <td>
-                                            <a href="{{ route('editbrand',$brand->id) }}" class="btn btn-info">edit</a>
-                                            <a href="{{ route('deletebrand',$brand->id) }}" class="btn btn-danger">delete</a>
+                                            <a href="{{ route('editoffice',$office->id) }}" value="{{ $office->id }}" class="btn btn-info btn-sm">Edit</a>
+                                            <a href="{{ route('deleteoffice',$office->id) }}" value="{{ $office->id }}" class="btn btn-danger btn-sm">Delete</a>
                                         </td>
-									</tr>
+                                    </tr>
+
+
+
+                                    
 									
 								</tbody>
                                 @endforeach
 								<tfoot>
 									<tr>
-                                        <th>Brand Name</th>
+                                        <th>Product Name</th>
 										<th>Description</th>
 										<th>Price</th>
 										<th>Quantity</th>

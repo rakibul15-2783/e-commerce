@@ -81,7 +81,7 @@
 										<label class="col-sm-3 col-form-label"></label>
 										<div class="col-sm-9">
 											<button type="submit" class="btn btn-info px-5">Add</button>
-										</div>
+										</div> 
 									</div>
                                     </form>
 								</div>
